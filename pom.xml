@@ -88,6 +88,8 @@
                     <descriptors>
                         <decriptor>src/main/resources/assembly.xml</decriptor>
                     </descriptors>
+                    <!--是否在打包的时候,包名拼上 assembly.xml 里的id-->
+                    <appendAssemblyId>false</appendAssemblyId>
                     <tarLongFileMode>posix</tarLongFileMode>
                 </configuration>
                 <executions>

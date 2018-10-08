@@ -1,7 +1,10 @@
 #!/bin/bash
 echo "start server...."
 
-DEPLOYE_DIR=`pwd`
+BIN_DIR=$(dirname $0)
+cd ${BIN_DIR}
+echo "bin_dir => ${BIN_DIR}"
+DEPLOYE_DIR=`dirname ../${BIN_DIR}`
 echo "--> $DEPLOYE_DIR"
 BIN_DIR=${DEPLOYE_DIR}/bin
 echo "--> $BIN_DIR"
